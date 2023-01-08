@@ -26,7 +26,7 @@ public class SpringMvcDispatcherServletInitializer extends AbstractAnnotationCon
     protected String[] getServletMappings() {
         return new String[]{"/"};
     }
-   /* @Override
+   @Override
     public void onStartup(ServletContext aServletContext) throws ServletException {
         super.onStartup(aServletContext);
         registerCharacterEncodingFilter(aServletContext);
@@ -47,5 +47,5 @@ public class SpringMvcDispatcherServletInitializer extends AbstractAnnotationCon
 
         FilterRegistration.Dynamic characterEncoding = aContext.addFilter("characterEncoding", characterEncodingFilter);
         characterEncoding.addMappingForUrlPatterns(dispatcherTypes, true, "/*");
-    }*/
+    }
 }
